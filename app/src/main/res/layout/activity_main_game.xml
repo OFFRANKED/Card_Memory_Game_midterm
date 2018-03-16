@@ -4,102 +4,100 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:minHeight="0dp"
     tools:context="com.midterm.college.midterm.MainGameActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="26dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="32dp"
-        android:text="Pick a card, Any card"
-        android:textAlignment="center"
-        android:textAllCaps="true"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.015" />
-
-    <TextView
-        android:id="@+id/T_Score"
-        android:layout_width="66dp"
-        android:layout_height="30dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Score :"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.182"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.055" />
-
-    <TextView
         android:id="@+id/N_Score"
-        android:layout_width="94dp"
-        android:layout_height="29dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="56dp"
         android:layout_marginRight="16dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         android:text="00"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/gridLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.983"
+        app:layout_constraintHorizontal_bias="0.781"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toEndOf="@+id/T_Score"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.055" />
+        app:layout_constraintTop_toBottomOf="@+id/Head"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/T_Timer"
-        android:layout_width="66dp"
-        android:layout_height="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="68dp"
         android:layout_marginTop="8dp"
         android:text="Timer :"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/gridLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintEnd_toStartOf="@+id/N_Timer"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/T_Score"
-        app:layout_constraintVertical_bias="0.074" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/N_Timer"
-        android:layout_width="94dp"
-        android:layout_height="29dp"
+        android:id="@+id/Head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Pick a card, Any card"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/T_Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Score :"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Head"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/N_Timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="92dp"
         android:layout_marginTop="8dp"
         android:text="00"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/gridLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.7"
-        app:layout_constraintStart_toEndOf="@+id/T_Timer"
         app:layout_constraintTop_toBottomOf="@+id/N_Score"
-        app:layout_constraintVertical_bias="0.084" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <GridLayout
         android:id="@+id/gridLayout"
-        android:layout_width="359dp"
-        android:layout_height="427dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -107,17 +105,17 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.891">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.967">
 
         <ImageButton
-            android:id="@+id/01"
+            android:id="@+id/I01"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/cardback" />
 
         <ImageButton
-            android:id="@+id/02"
+            android:id="@+id/I02"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="1"
@@ -125,7 +123,7 @@
             app:srcCompat="@drawable/cardback" />
 
         <ImageButton
-            android:id="@+id/03"
+            android:id="@+id/I03"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="2"
@@ -133,7 +131,7 @@
             app:srcCompat="@drawable/cardback" />
 
         <ImageButton
-            android:id="@+id/04"
+            android:id="@+id/I04"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="3"
@@ -141,7 +139,7 @@
             app:srcCompat="@drawable/cardback" />
 
         <ImageButton
-            android:id="@+id/11"
+            android:id="@+id/I11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="0"
@@ -149,7 +147,7 @@
             app:srcCompat="@drawable/cardback" />
 
         <ImageButton
-            android:id="@+id/12"
+            android:id="@+id/I12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="0"
@@ -157,7 +155,7 @@
             app:srcCompat="@drawable/cardback" />
 
         <ImageButton
-            android:id="@+id/13"
+            android:id="@+id/I13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="0"
@@ -165,7 +163,7 @@
             app:srcCompat="@drawable/cardback" />
 
         <ImageButton
-            android:id="@+id/14"
+            android:id="@+id/I14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="1"
@@ -173,7 +171,7 @@
             app:srcCompat="@drawable/cardback" />
 
         <ImageButton
-            android:id="@+id/21"
+            android:id="@+id/I21"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="1"
@@ -181,7 +179,7 @@
             app:srcCompat="@drawable/cardback" />
 
         <ImageButton
-            android:id="@+id/22"
+            android:id="@+id/I22"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="1"
@@ -189,7 +187,7 @@
             app:srcCompat="@drawable/cardback" />
 
         <ImageButton
-            android:id="@+id/23"
+            android:id="@+id/I23"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="2"
@@ -197,7 +195,7 @@
             app:srcCompat="@drawable/cardback" />
 
         <ImageButton
-            android:id="@+id/24"
+            android:id="@+id/I24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="2"
@@ -205,7 +203,7 @@
             app:srcCompat="@drawable/cardback" />
 
         <ImageButton
-            android:id="@+id/31"
+            android:id="@+id/I31"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="2"
@@ -213,7 +211,7 @@
             app:srcCompat="@drawable/cardback" />
 
         <ImageButton
-            android:id="@+id/32"
+            android:id="@+id/I32"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="3"
@@ -221,7 +219,7 @@
             app:srcCompat="@drawable/cardback" />
 
         <ImageButton
-            android:id="@+id/33"
+            android:id="@+id/I33"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="3"
@@ -229,7 +227,7 @@
             app:srcCompat="@drawable/cardback" />
 
         <ImageButton
-            android:id="@+id/34"
+            android:id="@+id/I34"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="3"

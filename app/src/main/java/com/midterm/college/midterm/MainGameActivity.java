@@ -10,7 +10,7 @@ import android.widget.TextView;
 public class MainGameActivity extends AppCompatActivity {
 
     TextView n_score, n_timer;
-    ImageButton B_01;
+    //ImageButton B_01;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
