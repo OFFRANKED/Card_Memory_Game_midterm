@@ -100,6 +100,13 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
+        android:padding="10dp"
+        android:paddingBottom="10dp"
+        android:paddingEnd="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -112,6 +119,7 @@
             android:id="@+id/I01"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:padding="5dp"
             app:srcCompat="@drawable/cardback" />
 
         <ImageButton
@@ -120,6 +128,7 @@
             android:layout_height="wrap_content"
             android:layout_column="1"
             android:layout_row="0"
+            android:padding="5dp"
             app:srcCompat="@drawable/cardback" />
 
         <ImageButton
@@ -128,6 +137,7 @@
             android:layout_height="wrap_content"
             android:layout_column="2"
             android:layout_row="0"
+            android:padding="5dp"
             app:srcCompat="@drawable/cardback" />
 
         <ImageButton
@@ -136,6 +146,7 @@
             android:layout_height="wrap_content"
             android:layout_column="3"
             android:layout_row="0"
+            android:padding="5dp"
             app:srcCompat="@drawable/cardback" />
 
         <ImageButton
@@ -144,38 +155,43 @@
             android:layout_height="wrap_content"
             android:layout_column="0"
             android:layout_row="1"
+            android:padding="5dp"
             app:srcCompat="@drawable/cardback" />
 
         <ImageButton
             android:id="@+id/I12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_column="0"
-            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:padding="5dp"
             app:srcCompat="@drawable/cardback" />
 
         <ImageButton
             android:id="@+id/I13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_column="0"
-            android:layout_row="3"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:padding="5dp"
             app:srcCompat="@drawable/cardback" />
 
         <ImageButton
             android:id="@+id/I14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_column="1"
+            android:layout_column="3"
             android:layout_row="1"
+            android:padding="5dp"
             app:srcCompat="@drawable/cardback" />
 
         <ImageButton
             android:id="@+id/I21"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_column="1"
+            android:layout_column="0"
             android:layout_row="2"
+            android:padding="5dp"
             app:srcCompat="@drawable/cardback" />
 
         <ImageButton
@@ -183,7 +199,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="1"
-            android:layout_row="3"
+            android:layout_row="2"
+            android:padding="5dp"
             app:srcCompat="@drawable/cardback" />
 
         <ImageButton
@@ -191,39 +208,44 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="2"
-            android:layout_row="1"
+            android:layout_row="2"
+            android:padding="5dp"
             app:srcCompat="@drawable/cardback" />
 
         <ImageButton
             android:id="@+id/I24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_column="2"
+            android:layout_column="3"
             android:layout_row="2"
+            android:padding="5dp"
             app:srcCompat="@drawable/cardback" />
 
         <ImageButton
             android:id="@+id/I31"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_column="2"
+            android:layout_column="0"
             android:layout_row="3"
+            android:padding="5dp"
             app:srcCompat="@drawable/cardback" />
 
         <ImageButton
             android:id="@+id/I32"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_column="3"
-            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_row="3"
+            android:padding="5dp"
             app:srcCompat="@drawable/cardback" />
 
         <ImageButton
             android:id="@+id/I33"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_column="3"
-            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_row="3"
+            android:padding="5dp"
             app:srcCompat="@drawable/cardback" />
 
         <ImageButton
@@ -232,6 +254,7 @@
             android:layout_height="wrap_content"
             android:layout_column="3"
             android:layout_row="3"
+            android:padding="5dp"
             app:srcCompat="@drawable/cardback" />
     </GridLayout>
 
