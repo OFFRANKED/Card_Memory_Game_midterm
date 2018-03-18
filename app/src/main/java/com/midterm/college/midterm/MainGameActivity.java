@@ -1,21 +1,16 @@
 package com.midterm.college.midterm;
 
 import android.graphics.Color;
-import android.icu.util.IslamicCalendar;
 import android.os.CountDownTimer;
 import android.os.Handler;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 
 public class MainGameActivity extends AppCompatActivity {
@@ -25,7 +20,7 @@ public class MainGameActivity extends AppCompatActivity {
     //Array for Images
     Integer []          CardArray = { 101,102,103,104,111, 112, 113, 114, 121, 122, 123, 124, 131, 132, 133, 134 };
     //Image Holders
-    int                 i001, i002, i003, i004, i101, i102, i103, i104, i201, i202, i203, i204, i301, i302, i303, i304;
+    int                 i001, i002, i003, i004, i005, i006, i007, i008, i009, i010, i011, i012, i013, i014, i015, i016, i017, i018, i019, i020, i021, i022, i023, i024, i025, i026, i027, i028, i029, i030, i031, i032, i033, i034, i035, i036, i037, i038, i039, i040, i041, i042, i043, i044, i045, i046, i047, i048, i049, i050, i051, i052;
 
     int                 FirstCard, SecondCard;
     int                 ClickedFirst, ClickedSecond;
@@ -244,51 +239,51 @@ public class MainGameActivity extends AppCompatActivity {
         }
         else if(CardArray[Card] == 111)
         {
-            b_01.setImageResource(i101);
+            b_01.setImageResource(i005);
         }
         else if(CardArray[Card] == 112)
         {
-            b_01.setImageResource(i102);
+            b_01.setImageResource(i006);
         }
         else if(CardArray[Card] == 113)
         {
-            b_01.setImageResource(i103);
+            b_01.setImageResource(i007);
         }
         else if(CardArray[Card] == 114)
         {
-            b_01.setImageResource(i104);
+            b_01.setImageResource(i008);
         }
         else if(CardArray[Card] == 121)
         {
-            b_01.setImageResource(i201);
+            b_01.setImageResource(i009);
         }
         else if(CardArray[Card] == 122)
         {
-            b_01.setImageResource(i202);
+            b_01.setImageResource(i010);
         }
         else if(CardArray[Card] == 123)
         {
-            b_01.setImageResource(i203);
+            b_01.setImageResource(i011);
         }
         else if(CardArray[Card] == 124)
         {
-            b_01.setImageResource(i204);
+            b_01.setImageResource(i012);
         }
         else if(CardArray[Card] == 131)
         {
-            b_01.setImageResource(i301);
+            b_01.setImageResource(i013);
         }
         else if(CardArray[Card] == 132)
         {
-            b_01.setImageResource(i302);
+            b_01.setImageResource(i014);
         }
         else if(CardArray[Card] == 133)
         {
-            b_01.setImageResource(i303);
+            b_01.setImageResource(i015);
         }
         else if(CardArray[Card] == 134)
         {
-            b_01.setImageResource(i304);
+            b_01.setImageResource(i016);
         }
 
         //Check which image is selected
@@ -557,20 +552,65 @@ public class MainGameActivity extends AppCompatActivity {
         i003 = R.drawable.card_1h;
         i004 = R.drawable.card_1s;
 
-        i101 = R.drawable.card_2c;
-        i102 = R.drawable.card_2d;
-        i103 = R.drawable.card_2h;
-        i104 = R.drawable.card_2s;
+        i005 = R.drawable.card_2c;
+        i006 = R.drawable.card_2d;
+        i007 = R.drawable.card_2h;
+        i008 = R.drawable.card_2s;
 
-        i201 = R.drawable.card_3c;
-        i202 = R.drawable.card_3d;
-        i203 = R.drawable.card_3h;
-        i204 = R.drawable.card_3s;
+        i009 = R.drawable.card_3c;
+        i010 = R.drawable.card_3d;
+        i011 = R.drawable.card_3h;
+        i012 = R.drawable.card_3s;
 
-        i301 = R.drawable.card_4c;
-        i302 = R.drawable.card_4d;
-        i303 = R.drawable.card_4h;
-        i304 = R.drawable.card_4s;
+        i013 = R.drawable.card_4c;
+        i014 = R.drawable.card_4d;
+        i015 = R.drawable.card_4h;
+        i016 = R.drawable.card_4s;
+
+        i017 = R.drawable.card_5c;
+        i018 = R.drawable.card_5d;
+        i019 = R.drawable.card_5h;
+        i020 = R.drawable.card_5s;
+
+        i021 = R.drawable.card_6c;
+        i022 = R.drawable.card_6d;
+        i023 = R.drawable.card_6h;
+        i024 = R.drawable.card_6s;
+
+        i025 = R.drawable.card_7c;
+        i026 = R.drawable.card_7d;
+        i027 = R.drawable.card_7h;
+        i028 = R.drawable.card_7s;
+
+        i029 = R.drawable.card_8c;
+        i030 = R.drawable.card_8d;
+        i031 = R.drawable.card_8h;
+        i032 = R.drawable.card_8s;
+
+        i033 = R.drawable.card_9c;
+        i034 = R.drawable.card_9d;
+        i035 = R.drawable.card_9h;
+        i036 = R.drawable.card_9s;
+
+        i037 = R.drawable.card_10c;
+        i038 = R.drawable.card_10d;
+        i039 = R.drawable.card_10h;
+        i040 = R.drawable.card_10s;
+
+        i041 = R.drawable.card_11c;
+        i042 = R.drawable.card_11d;
+        i043 = R.drawable.card_11h;
+        i044 = R.drawable.card_11s;
+
+        i045 = R.drawable.card_12c;
+        i046 = R.drawable.card_12d;
+        i047 = R.drawable.card_12h;
+        i048 = R.drawable.card_12s;
+
+        i049 = R.drawable.card_13c;
+        i050 = R.drawable.card_13d;
+        i051 = R.drawable.card_13h;
+        i052 = R.drawable.card_13s;
 
     }
 
