@@ -1,6 +1,7 @@
 //Author(s): Jatin Kumar (101035696); Aljon Ramos (101050991).
 //Description: Layout is done on Google Pixel 2 XL, API 27.
 //GitHub: https://github.com/OFFRANKED/Card_Memory_Game_midterm.git
+//Date: March 13, 2018
 package com.midterm.college.midterm;
 
 import android.graphics.Color;
@@ -37,7 +38,7 @@ public class MainGameActivity extends AppCompatActivity {
 
         n_score= (TextView) findViewById(R.id.N_Score);
         n_timer= (TextView) findViewById(R.id.N_Timer);
-
+        //Getting IDs
         B_01 = (ImageButton) findViewById(R.id.I01);
         B_02 = (ImageButton) findViewById(R.id.I02);
         B_03 = (ImageButton) findViewById(R.id.I03);
@@ -54,7 +55,7 @@ public class MainGameActivity extends AppCompatActivity {
         B_32 = (ImageButton) findViewById(R.id.I32);
         B_33 = (ImageButton) findViewById(R.id.I33);
         B_34 = (ImageButton) findViewById(R.id.I34);
-
+        //Setting Tags
         B_01.setTag("0");
         B_02.setTag("1");
         B_03.setTag("2");
@@ -74,9 +75,11 @@ public class MainGameActivity extends AppCompatActivity {
 
         //Loading Images
         frontOfCardResources();
+
         //Shuffle
         Collections.shuffle(Arrays.asList(CardArray));
 
+        //Button(Image) onClickListener
         B_01.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -218,98 +221,65 @@ public class MainGameActivity extends AppCompatActivity {
             public void onFinish() {
                 n_timer.setTextColor(Color.RED);
                 n_timer.setText("TimeUp!!");
+                finish();
             }
         }.start();
     }
 
+    //Shuffle Stuff
     private void doStuff(ImageButton b_01, int Card) {
         //Set the correct images
-        if(CardArray[Card] == 101)
-        {
+        if (CardArray[Card] == 101) {
             b_01.setImageResource(i001);
-        }
-        else if(CardArray[Card] == 102)
-        {
+        } else if (CardArray[Card] == 102) {
             b_01.setImageResource(i002);
-        }
-        else if(CardArray[Card] == 103)
-        {
+        } else if (CardArray[Card] == 103) {
             b_01.setImageResource(i003);
-        }
-        else if(CardArray[Card] == 104)
-        {
+        } else if (CardArray[Card] == 104) {
             b_01.setImageResource(i004);
-        }
-        else if(CardArray[Card] == 111)
-        {
+        } else if (CardArray[Card] == 111) {
             b_01.setImageResource(i005);
-        }
-        else if(CardArray[Card] == 112)
-        {
+        } else if (CardArray[Card] == 112) {
             b_01.setImageResource(i006);
-        }
-        else if(CardArray[Card] == 113)
-        {
+        } else if (CardArray[Card] == 113) {
             b_01.setImageResource(i007);
-        }
-        else if(CardArray[Card] == 114)
-        {
+        } else if (CardArray[Card] == 114) {
             b_01.setImageResource(i008);
-        }
-        else if(CardArray[Card] == 121)
-        {
-            b_01.setImageResource(i009);
-        }
-        else if(CardArray[Card] == 122)
-        {
-            b_01.setImageResource(i010);
-        }
-        else if(CardArray[Card] == 123)
-        {
-            b_01.setImageResource(i011);
-        }
-        else if(CardArray[Card] == 124)
-        {
-            b_01.setImageResource(i012);
-        }
-        else if(CardArray[Card] == 131)
-        {
-            b_01.setImageResource(i013);
-        }
-        else if(CardArray[Card] == 132)
-        {
-            b_01.setImageResource(i014);
-        }
-        else if(CardArray[Card] == 133)
-        {
-            b_01.setImageResource(i015);
-        }
-        else if(CardArray[Card] == 134)
-        {
-            b_01.setImageResource(i016);
+        } else if (CardArray[Card] == 121) {
+            b_01.setImageResource(i001);
+        } else if (CardArray[Card] == 122) {
+            b_01.setImageResource(i002);
+        } else if (CardArray[Card] == 123) {
+            b_01.setImageResource(i003);
+        } else if (CardArray[Card] == 124) {
+            b_01.setImageResource(i004);
+        } else if (CardArray[Card] == 131) {
+            b_01.setImageResource(i005);
+        } else if (CardArray[Card] == 132) {
+            b_01.setImageResource(i006);
+        } else if (CardArray[Card] == 133) {
+            b_01.setImageResource(i007);
+        } else if (CardArray[Card] == 134) {
+            b_01.setImageResource(i008);
         }
 
         //Check which image is selected
-        if (CardNumber==1)
-        {
+        if (CardNumber == 1) {
             FirstCard = CardArray[Card];
-            if (FirstCard>200)
-            {
-                FirstCard=FirstCard -100;
+            if (FirstCard > 200) {
+                FirstCard = FirstCard - 100;
             }
             CardNumber = 2;
             ClickedFirst = Card;
 
             B_01.setEnabled(false);
 
-        }
-        else if (CardNumber ==2)
-        {
+        } else if (CardNumber == 2) {
             SecondCard = CardArray[Card];
-            if (SecondCard>200)
-            {
-                SecondCard=SecondCard -100;
+            if (SecondCard > 200) {
+                SecondCard = SecondCard - 100;
             }
+
             CardNumber = 1;
             ClickedSecond = Card;
 
@@ -343,6 +313,7 @@ public class MainGameActivity extends AppCompatActivity {
 
     }
 
+    //Cal Score
     private void calculate() {
         //If images are equal -> remove them
         if (FirstCard==SecondCard)
@@ -474,8 +445,9 @@ public class MainGameActivity extends AppCompatActivity {
             {
                 B_34.setVisibility(View.INVISIBLE);
             }
+
             Score++;
-            n_score.setText(" " + Score);
+            n_score.setText("" + Score);
 
         }
         else
@@ -548,7 +520,7 @@ public class MainGameActivity extends AppCompatActivity {
         }
     }
 
-
+    //Assign Images to there variables
     private void frontOfCardResources() {
         i001 = R.drawable.card_1c;
         i002 = R.drawable.card_1d;
